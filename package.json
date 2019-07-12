@@ -21,7 +21,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "clean:modules": "rimraf node_modules",
+    "clean:yarn": "rimraf ./yarn.lock",
+    "clean:all": "run-s clean:yarn clean:modules",
+    "refresh": "run-s clean:modules && yarn install",
+    "regenerate": "yarn install && yarn clean:all && yarn install"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,5 +42,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^2.6.3"
   }
 }
