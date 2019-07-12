@@ -9,6 +9,11 @@
             "UnauthRoleName": "met-up-dev-20190712124844-unauthRole",
             "StackName": "met-up-dev-20190712124844",
             "StackId": "arn:aws:cloudformation:us-east-1:240877302623:stack/met-up-dev-20190712124844/4bc69ff0-a4cd-11e9-8e24-1202dd259b0c"
+        },
+        "categories": {
+            "auth": {
+                "metupade7d27d": {}
+            }
         }
     }
 }

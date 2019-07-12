@@ -1,0 +1,10 @@
+{
+    "AppSyncApiName": "metupapi",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authmetupade7d27d",
+            "Outputs.UserPoolId"
+        ]
+    }
+}
