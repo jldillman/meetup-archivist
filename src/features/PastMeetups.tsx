@@ -6,6 +6,8 @@ const PastMeetups = () => {
   const [groupName, setGroupName] = React.useState("");
   const [fetchTriggered, setFetchTriggered] = React.useState(false);
   const { fetching, events } = useMeetupEvents(fetchTriggered ? groupName : "");
+  console.log("events", events);
+  console.log("events legnth", events.length);
   return (
     <div style={{ padding: "50px" }}>
       <TextField
@@ -22,7 +24,11 @@ const PastMeetups = () => {
           Fetching...
         </Typography>
       )}
-      {events && events.length && events.length > 1 && JSON.stringify(events)}
+      <div>
+        {events && events.length && events.length > 0 ? (
+          <pre>{JSON.stringify(events)}</pre>
+        ) : null}
+      </div>
     </div>
   );
 };

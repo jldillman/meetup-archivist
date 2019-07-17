@@ -4,9 +4,9 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import MainLayout from "./layout/MainLayout";
 import { createMuiTheme } from "@material-ui/core";
 import Amplify from "aws-amplify";
-// import aws_exports from "./aws-exports";
+import aws_exports from "./aws-exports";
 
-// Amplify.configure(aws_exports);
+Amplify.configure(aws_exports);
 
 export const theme = () =>
   createMuiTheme({
