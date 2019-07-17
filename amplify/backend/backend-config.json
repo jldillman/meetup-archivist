@@ -9,7 +9,7 @@
 		}
 	},
 	"function": {
-		"meetupevents": {
+		"helloworld": {
 			"service": "Lambda",
 			"providerPlugin": "awscloudformation",
 			"build": true

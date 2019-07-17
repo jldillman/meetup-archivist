@@ -28,12 +28,12 @@
 				"FunctionName": {
 					"Fn::If": [
 						"ShouldNotCreateEnvResources",
-						"meetupevents",
+						"helloworld",
 						{
 							"Fn::Join": [
 								"",
 								[
-									"meetupevents",
+									"helloworld",
 									"-",
 									{
 										"Ref": "env"
@@ -63,7 +63,7 @@
 				"Timeout": "25",
 				"Code": {
 					"S3Bucket": "met-up-dev-20190717153058-deployment",
-					"S3Key": "amplify-builds/meetupevents-1563398107-latest-build.zip"
+					"S3Key": "amplify-builds/helloworld-1563399113-latest-build.zip"
 				}
 			}
 		},
@@ -73,12 +73,12 @@
 				"RoleName": {
 					"Fn::If": [
 						"ShouldNotCreateEnvResources",
-						"metupLambdaRoleee61dcad",
+						"metupLambdaRolee83ca158",
 						{
 							"Fn::Join": [
 								"",
 								[
-									"metupLambdaRoleee61dcad",
+									"metupLambdaRolee83ca158",
 									"-",
 									{
 										"Ref": "env"
