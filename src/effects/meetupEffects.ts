@@ -1,5 +1,7 @@
 import React from "react";
 import axios from "axios";
+import Amplify, { API, graphqlOperation, Auth } from "aws-amplify";
+// import * as queries from "./../graphql/queries";
 
 export const useMeetupEvents = (
   meetupGroupName: string
@@ -9,8 +11,11 @@ export const useMeetupEvents = (
 
   const handleNewGroupName = async (group: string) => {
     setFetching(true);
-    const result = await axios.get(`https://api.meetup.com/${group}/events`);
-    setEvents(result.data);
+    // const result = await axios.get(`https://api.meetup.com/${group}/events`);
+    // setEvents(result.data);
+    // await Auth.signIn();
+    // const allBlogs = await API.graphql(graphqlOperation(queries.listBlogs));
+    // setEvents(allBlogs);
     setFetching(false);
   };
 
