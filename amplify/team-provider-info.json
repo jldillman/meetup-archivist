@@ -1,0 +1,14 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "met-up-dev-20190717153058-authRole",
+            "UnauthRoleArn": "arn:aws:iam::240877302623:role/met-up-dev-20190717153058-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::240877302623:role/met-up-dev-20190717153058-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "met-up-dev-20190717153058-deployment",
+            "UnauthRoleName": "met-up-dev-20190717153058-unauthRole",
+            "StackName": "met-up-dev-20190717153058",
+            "StackId": "arn:aws:cloudformation:us-east-1:240877302623:stack/met-up-dev-20190717153058/c96a7820-a8d1-11e9-a766-0ad7f2019cc4"
+        }
+    }
+}
