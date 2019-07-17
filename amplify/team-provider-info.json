@@ -12,7 +12,9 @@
         },
         "categories": {
             "auth": {
-                "metupade7d27d": {}
+                "metupade7d27d": {
+                    "hostedUIProviderCreds": "[]"
+                }
             }
         }
     }
