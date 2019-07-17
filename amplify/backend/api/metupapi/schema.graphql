@@ -3,3 +3,7 @@ type Todo @model {
   name: String!
   description: String
 }
+
+type Query {
+  helloworld(msg: String): String @function(name: "helloworld-${env}")
+}

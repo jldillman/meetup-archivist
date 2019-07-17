@@ -1,6 +1,10 @@
 // tslint:disable
 // this is an auto generated file. This will be overwritten
 
+export const helloworld = `query Helloworld($msg: String) {
+  helloworld(msg: $msg)
+}
+`;
 export const getTodo = `query GetTodo($id: ID!) {
   getTodo(id: $id) {
     id

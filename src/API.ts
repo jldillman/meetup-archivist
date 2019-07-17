@@ -91,6 +91,14 @@ export type DeleteTodoMutation = {
   } | null,
 };
 
+export type HelloworldQueryVariables = {
+  msg?: string | null,
+};
+
+export type HelloworldQuery = {
+  helloworld: string | null,
+};
+
 export type GetTodoQueryVariables = {
   id: string,
 };
